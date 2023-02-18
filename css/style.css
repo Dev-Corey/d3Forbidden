@@ -4,21 +4,18 @@
 	background-color: black;
 }
 
-.menuPic {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-
 #main {
+	background-color: aquamarine;
 	width: 100%;
-	height: 721px;
-	background: url(https://github.com/Dev-Corey/d3Forbidden/blob/main/assets/images/menu.jpg) no-repeat fixed;
+	height: 400px;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	background: url("../assets/images/menu.jpg") no-repeat;
+	background-size: cover;
 	background-position-x: center;
 	background-position-y: center;
 	background-size: 95% 100%;
-	overflow: hidden;
+	overflow: scroll;
 }
 
 @media only screen and (max-width: 480px) {
