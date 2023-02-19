@@ -7,15 +7,16 @@
 	margin: 0;
 	padding: 0;
 	--primary-font-clr: #000000;
+	font-family: "Ketupat Ramadhan", cursive;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	background: url("../assets/images/flBackground.jpg") no-repeat fixed;
+	background: url("../assets/images/flBackground.jpg") repeat fixed;
+	background-color: #000000;
 	/* background-size: cover; */
 	/* position: fixed; */
-	font-family: "Ketupat Ramadhan", cursive;
 }
 
 .title {
