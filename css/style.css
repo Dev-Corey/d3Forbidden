@@ -13,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: url("../assets/images/flBackground.jpg") no-repeat;
-	background-size: cover;
+	background-size: auto;
 	background-attachment: fixed;
 	font-family: "Ketupat Ramadhan", cursive;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .title span {
-	-webkit-text-stroke: 0.01px rgb(180, 72, 39);
+	-webkit-text-stroke: 1px rgb(180, 72, 39);
 }
 
 /* Drinks */
