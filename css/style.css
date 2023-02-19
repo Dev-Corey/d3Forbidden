@@ -12,9 +12,9 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: url("../assets/images/flBackground.jpg") no-repeat;
-	background-size: auto;
-	background-attachment: fixed;
+	background: url("../assets/images/flBackground.jpg") no-repeat fixed;
+	/* background-size: cover; */
+	/* position: fixed; */
 	font-family: "Ketupat Ramadhan", cursive;
 }
 
