@@ -1,19 +1,28 @@
-/* * {
+@font-face {
+	font-family: "Ketupat Ramadhan";
+	src: url(../assets/fonts/ketupat_ramadhan/Ketupat\ Ramadhan.ttf);
+}
+
+* {
 	margin: 0;
 	padding: 0;
+	--primary-font-clr: #000000;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
+	max-width: 100vw;
 	background: url("../assets/images/flBackground.jpg") no-repeat;
 	background-size: cover;
-	font-family: "Water Brush", cursive;
+	background-attachment: fixed;
+	font-family: "Ketupat Ramadhan", cursive;
 }
 
 .title {
-	color: black;
+	margin-top: 2em;
+	color: var(--primary-font-clr);
 	font-size: 70px;
 	font-weight: 900;
 	display: flex;
@@ -25,60 +34,116 @@ body {
 	-webkit-text-stroke: 0.01px rgb(180, 72, 39);
 }
 
+/* Drinks */
+
+#sherpa {
+	color: #ffae00ce;
+}
+
+#jade {
+	color: #0ce26d;
+}
+
+#navel {
+	color: #0084ffe7;
+}
+
+#base {
+	color: #aaaaaace;
+}
+
+#nectar {
+	color: #ff0000ce;
+}
+
 .drinkList {
-	display: flex;
-	justify-content: center;
+	display: block;
+	align-items: center;
 }
 
 .drinkTitle {
-	color: black;
+	color: transparent;
 	font-size: 60px;
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	margin-top: 1em;
+	-webkit-text-stroke: 2px black;
 }
 
 .drink {
 	display: block;
 	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .drinkDescription {
-	font-size: 20px;
-	font-weight: 900;
+	display: block;
+	font-size: 30px;
+	font-weight: 580;
+	margin: 0 1em;
 }
 
 .divider {
+	background-color: var(--primary-font-clr);
+	display: inline-block;
+	margin-bottom: 1rem;
 	height: 3px;
-	width: 80vw;
-	background-color: black;
-	display: flex;
-	justify-content: center;
+	width: 40%;
 }
+
+/* Footer */
+
+.disclaimer {
+	display: block;
+	margin: 5rem 2rem;
+	text-align: center;
+	font-size: 40px;
+}
+
+.ft__Highlight-Wt {
+	-webkit-text-stroke: 1px white;
+}
+
+.ft__Highlight-Red {
+	-webkit-text-stroke: 1px red;
+}
+
+/* Media Queries */
 
 @media only screen and (max-width: 480px) {
 	.title {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.divider {
-		width: auto;
+		width: 75%;
 	}
 }
 
 @media only screen and (max-width: 600px) {
 	.title {
-		font-size: 30px;
+		font-size: 40px;
 	}
 	.divider {
-		width: auto;
+		width: 75%;
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	.title {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	.divider {
-		width: 100%;
+		width: 75%;
 	}
-} */
+}
+
+@media screen and (min-width: 1440px) {
+	.drinkTitle {
+		font-size: 120px;
+	}
+	.drinkDescription {
+		font-size: 70px;
+	}
+}
