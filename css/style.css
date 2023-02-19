@@ -15,7 +15,6 @@ body {
 	padding: 0;
 	background: url("../assets/images/flBackground.jpg");
 	background-color: #000000;
-	background-attachment: fixed;
 }
 
 .title {
@@ -101,7 +100,7 @@ body {
 }
 
 .ft__Highlight-Wt {
-	-webkit-text-stroke: 1px rgb(0, 0, 0);
+	-webkit-text-stroke: 1px rgba(128, 128, 128, 0.795);
 }
 
 .ft__Highlight-Red {
