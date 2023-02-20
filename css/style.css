@@ -4,15 +4,15 @@
 }
 
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	--primary-font-clr: #000000;
 	font-family: "Ketupat Ramadhan", cursive;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	background: url("../assets/images/flBackground.jpg");
 	background-color: #000000;
 }
