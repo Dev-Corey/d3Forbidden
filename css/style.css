@@ -34,8 +34,8 @@ body {
 /* Drinks */
 
 #special {
-	color: #000000ce;
-	-webkit-text-stroke: 1px white;
+	color: #000000;
+	-webkit-text-stroke: 2px white;
 }
 
 #sherpa {
