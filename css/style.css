@@ -132,12 +132,12 @@ body {
 /* Media Queries */
 
 @media only screen and (max-width: 480px) {
-	.title {
-		font-size: 20px;
-	}
-	.divider {
-		width: 75%;
-	}
+}
+.title {
+	font-size: 20px;
+}
+.divider {
+	width: 75%;
 }
 
 @media only screen and (max-width: 600px) {
