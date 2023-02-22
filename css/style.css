@@ -27,8 +27,12 @@ body {
 	text-align: center;
 }
 
-.title span {
+.titleSpan {
 	-webkit-text-stroke: 1px rgb(180, 72, 39);
+}
+
+.subtitleSpan {
+	font-size: 25px;
 }
 
 /* Drinks */
