@@ -23,12 +23,23 @@ body {
 	font-size: 70px;
 	font-weight: 900;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 }
 
 .titleSpan {
 	-webkit-text-stroke: 1px rgb(180, 72, 39);
+}
+
+.VOTE {
+	margin-top: 2em;
+}
+
+.VOTE a {
+	color: blue;
+	font-size: 30px;
+	-webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
 .subtitleSpan {
