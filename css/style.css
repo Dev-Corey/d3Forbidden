@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "Ketupat Ramadhan";
+	font-family: 'Ketupat Ramadhan';
 	src: url(../assets/fonts/ketupat_ramadhan/Ketupat\ Ramadhan.ttf);
 }
 
@@ -7,13 +7,13 @@
 	margin: 0px;
 	padding: 0px;
 	--primary-font-clr: #000000;
-	font-family: "Ketupat Ramadhan", cursive;
+	font-family: 'Ketupat Ramadhan', cursive;
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
-	background: url("../assets/images/flBackground.jpg");
+	background: url('../assets/images/flBackground.jpg');
 	background-color: #000000;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .titleSpan {
-	-webkit-text-stroke: 1px rgb(180, 72, 39);
+	-webkit-text-stroke: 0.01px rgb(180, 72, 39);
 }
 
 .VOTE {
@@ -48,9 +48,14 @@ body {
 
 /* Drinks */
 
+#specialFIN {
+	color: #000000;
+	-webkit-text-stroke: 0.5px rgb(236, 156, 42);
+}
+
 #special {
 	color: #000000;
-	-webkit-text-stroke: 2px white;
+	-webkit-text-stroke: 0.5px white;
 }
 
 #sherpa {
@@ -118,7 +123,17 @@ body {
 	width: 40%;
 }
 
-.specialImg {
+/*  TEMP DRINKS */
+
+.specialImgFIN {
+	width: 15em;
+	height: 14em;
+	/* margin-bottom: 1em; */
+	background-image: url(../assets/images/fin.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.specialImgYAMA {
 	width: 20em;
 	height: 20em;
 	margin-bottom: 1em;
