@@ -53,6 +53,11 @@ body {
 	-webkit-text-stroke: 1px rgb(236, 156, 42);
 }
 
+#specialSOUR {
+	color: #000000;
+	-webkit-text-stroke: 1px rgb(255, 221, 28);
+}
+
 #special {
 	color: #000000;
 	-webkit-text-stroke: 1px white;
