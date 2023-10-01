@@ -50,12 +50,12 @@ body {
 
 #specialFIN {
 	color: #000000;
-	-webkit-text-stroke: 0.5px rgb(236, 156, 42);
+	-webkit-text-stroke: 1px rgb(236, 156, 42);
 }
 
 #special {
 	color: #000000;
-	-webkit-text-stroke: 0.5px white;
+	-webkit-text-stroke: 1px white;
 }
 
 #sherpa {
@@ -126,8 +126,8 @@ body {
 /*  TEMP DRINKS */
 
 .specialImgFIN {
-	width: 15em;
-	height: 14em;
+	width: 12em;
+	height: 11em;
 	/* margin-bottom: 1em; */
 	background-image: url(../assets/images/fin.png);
 	background-size: 100%;
