@@ -241,7 +241,7 @@ nav .igLink {
 .hidden {
 	opacity: 0;
 	filter: blur(10px);
-	transition: all 1500ms;
+	transition: all 3000ms;
 }
 
 .show {
