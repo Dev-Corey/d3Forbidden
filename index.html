@@ -2,134 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#AF926A" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet" />
-		<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
+		<meta name="robots" content="index,follow" />
 		<title>Forbidden Libations</title>
+		<meta name="description" content="Take Me To The Summit" />
+		<meta name="author" content="Corey Dawson (Dev-Corey), devcorey1101@gmail.com" />
+		<meta property="article:published_time" content="2023-12-17" />
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/assets/favicon/site.webmanifest" />
+		<!-- Styles -->
+		<link href="https://db.onlinewebfonts.com/c/e48f673dde3194b7957a4f17d6d7fe17?family=Charcuterie+Block+W05+Regular" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Js -->
+		<script defer src="app.js"></script>
 	</head>
 	<body>
-		<div class="mainDiv">
-			<!-- Title -->
-			<div class="title">
-				<div>
-					<h1><span class="titleSpan">Forbidden Libations</span><br /><span class="subtitleSpan">* Bar Only *</span></h1>
-				</div>
-				<!-- <div class="VOTE">
-					<a href="https://www.10best.com/awards/travel/best-theme-park-restaurant-2023/yak-yeti-disneys-animal-kingdom/" target="_blank"
-						>Vote for Yak & Yeti <br />as Best Theme Park Restaurant<br />Click Here To Vote!</a
-					>
-				</div> -->
+		<div class="bgImage"></div>
+		<div class="heroContainer largeHero">
+			<div class="heroItem heroBefore"><h1>Forbidden</h1></div>
+			<div class="heroItem heroCenter">
+				<a href="javascript:setTimeout( ()=> {window.location='menu.html'}, 500);"><img class="heroImage" src="/assets/images/webP/forbiddenLibations_v2_cropped.webp" alt="" /></a>
 			</div>
-			<!-- Drinks -->
-			<div class="drinkList">
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="specialFIN">Fall In Nepal</h5>
-					</div>
-					<div class="drinkDescription">
-						<div class="specialImgFIN"></div>
-						<span class="divider"></span>
-						<p class="drinkIngredients">Pumpkin Infused Bourbon / Vanilla, Cinnamon & Nutmeg Simple Syrup / Chicory Pecan Bitters</p>
-						<p>This limited time libation, concocted by our Sherpas, is one you wont want to miss</p>
-					</div>
-				</div>
-				<!-- <div class="drink">
-					<div class="drinkTitle">
-						<h5 id="specialSOUR">Sherpa Sour</h5>
-					</div>
-					<div class="drinkDescription">
-						<div class="specialImgFIN"></div>
-						<span class="divider"></span>
-						<p class="drinkIngredients">Bourbon / Mountain Made Sour / Maple Cinnamon Syrup</p>
-						<p>This limited time libation is one of the Sherpas favorite ways to celebrate after a successful trip to the summit</p>
-					</div>
-				</div> -->
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="special">Special Items</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<div class="specialImgYama"></div>
-						<p class="drinkIngredients">Yamazaki 12 year</p>
-						<p>from Kyoto, the capital of ancient Japan. This single malt 12 year aged whisky will ensure a warm and peaceful journey to the summit</p>
-					</div>
-				</div>
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="sherpa">Sherpa Fuel</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<p class="drinkIngredients">Bourbon / Splash of Pineapple Juice / Dash of Coconut Cream</p>
-						<p>To brave the frigid climates, endure the thin mountain air, and keep their fires burning it is said that this concoction was the Sherpa's secret weapon</p>
-					</div>
-				</div>
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="base">The Summit</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<p class="drinkIngredients">Gin / Elder Flower / Fresh Lime Juice / kiwi Puree / Splash of Soda</p>
-						<p>
-							Everest's Summit reaches 8,848.9 meters ( 29,032 ft ). The oxygen at that height is thin and the air is crisp. Hints of Lime and Kiwi will keep your feet on the ground as
-							you enjoy this refreshing concoction.
-						</p>
-					</div>
-				</div>
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="jade">Jade Dragon</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<p class="drinkIngredients">Vodka / Melon Liqueur / Apple Sake / Shimmering Sour</p>
-						<p>Some say Dragons are myth ~ others claim they were from a bygone time. This drink encapsulates dreams and reality</p>
-					</div>
-				</div>
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="navel">Yeti Navel</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<p class="drinkIngredients">Rum / Peach Schnapps / Mango / Spicy Ginger Syrup</p>
-						<p>This sweet frozen treat has a back-end bite that serves as a warning: Do not plan on seeing a yeti navel and live to tell about it</p>
-					</div>
-				</div>
-				<div class="drink">
-					<div class="drinkTitle">
-						<h5 id="nectar">Nepalese Nectar</h5>
-					</div>
-					<span class="divider"></span>
-					<div class="drinkDescription">
-						<p class="drinkIngredients">Tequila / Orange Liqueur / Ancho Chile Liqueur / Mango / Sour / Spices / Lime Spiced Rim</p>
-						<p>With mystic ingredients from far off lands, this nectar was banned at the Nepalese festivals due to its intoxicating sweetness and subtle burn</p>
-					</div>
-				</div>
-			</div>
-			<!-- End Drinks -->
-			<!-- Footer -->
-			<footer>
-				<div class="disclaimer">
-					<p>
-						Heed this warning weary explorers: If you are reading this it means you have laid your eyes upon the <span class="ft__Highlight-Red">Forbidden Libations</span>. Please
-						understand that this is meant as a template of warning, not consumption. However, if you dare to try <span class="ft__Highlight-Wt">please</span> keep this menu a
-						<span class="ft__Highlight-Wt">secret</span> and please, <span class="ft__Highlight-Wt">consume responsibly</span>
-					</p>
-					<br />
-					<p>These libations are <span class="ft__Highlight-Red">forbidden</span> and should be consumed with <span class="ft__Highlight-Red">extreme</span> caution</p>
-				</div>
-			</footer>
+			<div class="heroItem heroAfter"><h1>Libations</h1></div>
 		</div>
 	</body>
 </html>

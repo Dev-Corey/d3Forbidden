@@ -1,0 +1,460 @@
+@import url(https://db.onlinewebfonts.com/c/e48f673dde3194b7957a4f17d6d7fe17?family=Charcuterie+Block+W05+Regular);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100vh;
+
+	font-family: 'Charcuterie Block W05 Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+	font-size: 30px;
+	color: #000000;
+	--accent-color: #e8b86ffd;
+}
+
+/* ----------- Background ------------*/
+
+.bgImage {
+	background: url('/assets/images/background/vintage_paper_background_webp.webp');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1000;
+}
+
+/* ----------- Font Sizes ------------ */
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 90px;
+}
+
+h2 {
+	font-size: 55px;
+}
+
+h4 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+p {
+	/* font-family: 'Rubik Doodle Shadow'; */
+	font-size: 24px;
+	/* font-weight: bolder; */
+}
+
+/* ---------- Hero Image ----------- */
+
+.heroContainer {
+	height: 100vh;
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.heroBefore {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: -4.8em;
+	z-index: 5;
+
+	animation: fade-up 5s;
+}
+
+.heroAfter {
+	display: flex;
+	align-items: flex-start;
+	margin-top: -4em;
+	z-index: 5;
+
+	animation: fade-down 5s;
+}
+
+.heroCenter {
+	display: flex;
+	align-items: center;
+}
+
+.heroImage {
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+
+	animation: fade-in 500ms;
+}
+
+/* --------------- Nav ---------------- */
+
+.flex {
+	display: flex;
+	gap: 3rem;
+}
+
+.navToggle {
+	display: none;
+}
+
+nav .homeLink,
+nav .igLink {
+	display: none;
+}
+
+.navBar {
+	position: fixed;
+	margin: 0;
+	z-index: 1000;
+	background-color: rgba(225, 169, 49, 0);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	inset: 0 0 0 0%;
+	border-radius: 0;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transform: translateY(-100%);
+	transition: transform 1s ease-in-out;
+}
+
+.navBar button {
+	/* background-color: var(--accent-color); */
+	background: url('/assets/images/background/vintage_paper_background_webp.webp');
+	background-size: cover;
+	border-radius: 15px;
+	border: 2px solid #000000;
+}
+
+.navBar button:hover {
+	background: url('/assets/images/background/vintage_paper_background_webp.webp');
+	background-size: cover;
+	filter: blur(0.3px);
+	border: 2px solid var(--accent-color);
+}
+
+.navBar button a {
+	font-family: 'Charcuterie Block W05 Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+	font-size: 40px;
+	width: calc(100vw - 50%);
+	padding: 10px;
+}
+
+.logo img {
+	display: none;
+}
+
+nav .homeLink,
+nav .igLink {
+	display: flex;
+}
+
+.navBar.active {
+	transform: translateY(0%);
+}
+
+.navToggle {
+	display: block;
+	position: fixed;
+	z-index: 9999;
+	background-color: transparent;
+	background-image: url('/assets/images/webP/forbiddenLibations_v2_cropped.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 4rem;
+	aspect-ratio: 1;
+	border: 0;
+	top: 2rem;
+	right: 2rem;
+}
+
+.hamburger {
+	display: block;
+	position: relative;
+	bottom: 0;
+	right: -3px;
+}
+
+/* .hamburger,
+.hamburger::before,
+.hamburger::after {
+	margin-left: 1.098rem;
+	width: 1.5rem;
+	height: 4px;
+	background-color: rgb(0, 0, 0);
+
+	transition: transform 450ms ease-in-out, opacity 200ms linear;
+} */
+
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	position: absolute;
+}
+
+.hamburger::before {
+	bottom: 8px;
+	right: 0px;
+}
+.hamburger::after {
+	top: 8px;
+	right: 0px;
+}
+
+.navToggle.active .hamburger {
+	transform: rotate(225deg);
+}
+
+.navToggle.active .hamburger::after {
+	transform: rotate(90deg) translate(-8px);
+}
+
+.navToggle.active .hamburger::before {
+	opacity: 0;
+}
+
+/* ----------------- Hidden & Show ---------------- */
+
+.hidden {
+	opacity: 0;
+	filter: blur(10px);
+	transition: all 1500ms;
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+}
+
+/* ----------------- Food ------------------- */
+
+.food {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	padding-top: 8em;
+	width: 80%;
+	text-align: center;
+}
+
+.foodTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.foodImage {
+	max-width: 150px;
+	border: 3px solid #000000;
+	border-radius: 10px;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+
+.foodDetails {
+	margin-top: 15px;
+}
+
+.foodDetails > p {
+	margin-top: 10px;
+}
+
+/* ------------------- Special Drink ---------------- */
+
+.special {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	padding-top: 8em;
+	width: 80%;
+	text-align: center;
+}
+
+.specialTitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.specialImage {
+	max-width: 150px;
+	border: 3px solid #000000;
+	border-radius: 10px;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+
+.specialDetails {
+	margin-top: 15px;
+}
+
+.specialDetails > p {
+	margin-top: 10px;
+}
+
+/* --------------- Drinks --------------- */
+
+.drink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	width: 80%;
+	padding-top: 8em;
+}
+
+.drinkTitle {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.drinkImage {
+	max-width: 150px;
+	border: 3px solid #000000;
+	border-radius: 10px;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+
+.drinkDetails {
+	margin-top: 15px;
+}
+
+.drinkDetails > p {
+	margin-top: 10px;
+}
+
+/* --------------- Bar Only --------------- */
+
+.barOnly {
+	font-size: x-large;
+	text-align: center;
+	color: #000000;
+	-webkit-text-stroke: #f44717 1px;
+	padding: 5em 2em;
+}
+
+/* ---------------- Footer ----------------- */
+
+.footnote {
+	font-size: 4px;
+}
+
+.footnote > a {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* ---------------- Media Queries ---------------- */
+
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.heroContainer {
+		width: 40%;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.heroContainer {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.heroContainer {
+		width: 35%;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.heroContainer {
+		width: 25%;
+	}
+
+	h1 {
+		font-size: 100px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.heroContainer {
+		width: 20%;
+	}
+
+	h1 {
+		font-size: 150px;
+	}
+}
+
+/* ------------------ Keyframes ------------------ */
+
+@keyframes fade-up {
+	0% {
+		opacity: 0;
+		transform: translateY(30px) scale(1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px) scale(1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
