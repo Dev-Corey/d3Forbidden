@@ -49,17 +49,17 @@ h1 {
 
 h2 {
 	font-size: 40px;
+	font-weight: bold;
 }
 
 h4 {
-	font-size: 22px;
+	font-size: 28px;
 	font-weight: bold;
 }
 
 p {
 	/* font-family: 'Rubik Doodle Shadow'; */
-	font-size: 22px;
-	/* font-weight: bolder; */
+	font-size: 25px;
 }
 
 /* ---------- Hero Image ----------- */
