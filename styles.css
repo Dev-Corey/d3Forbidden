@@ -57,6 +57,11 @@ h4 {
 	font-weight: bold;
 }
 
+h5 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
 p {
 	/* font-family: 'Rubik Doodle Shadow'; */
 	font-size: 25px;
@@ -350,6 +355,10 @@ nav .igLink {
 
 .drinkDetails > p {
 	margin-top: 10px;
+}
+
+.partnerLink {
+	color: black;
 }
 
 /* --------------- Bar Only --------------- */
