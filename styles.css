@@ -72,7 +72,7 @@ p {
 .heroContainer {
 	height: 100vh;
 	width: 60%;
-	margin: 0 auto;
+	margin: auto auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
