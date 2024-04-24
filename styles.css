@@ -326,12 +326,24 @@ nav .igLink {
 	vertical-align: middle;
 }
 
+.specialImage-d3 {
+	max-width: 150px;
+	border: 4px inset #000000;
+	border-radius: 10px;
+	margin-right: 0.25em;
+	vertical-align: middle;
+}
+
 .specialDetails {
 	margin-top: 15px;
 }
 
 .specialDetails > p {
 	margin-top: 10px;
+}
+
+.d3100k {
+	margin-bottom: 0.5em;
 }
 
 /* --------------- Drinks --------------- */
@@ -369,6 +381,11 @@ nav .igLink {
 
 .partnerLink {
 	color: black;
+}
+
+.partnerLink-d3 {
+	color: #0063c0;
+	text-decoration: underline #ffffff;
 }
 
 /* --------------- Bar Only --------------- */
