@@ -328,9 +328,8 @@ nav .igLink {
 
 .specialImage-d3 {
 	max-width: 150px;
-	border: 4px inset #000000;
+	margin-bottom: 1em;
 	border-radius: 10px;
-	margin-right: 0.25em;
 	vertical-align: middle;
 }
 
