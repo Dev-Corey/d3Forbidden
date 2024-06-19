@@ -79,9 +79,9 @@ p {
 /* ---------- Hero Image ----------- */
 
 .heroContainer {
-	height: 100vh;
+	height: 90vh;
 	width: 60%;
-	margin: auto auto;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -256,7 +256,7 @@ nav .igLink {
 .hidden {
 	opacity: 0;
 	filter: blur(10px);
-	transition: all 3000ms;
+	transition: all 2500ms;
 }
 
 .show {
@@ -310,7 +310,7 @@ nav .igLink {
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	padding-top: 6em;
+	padding-top: 4em;
 	width: 80%;
 	text-align: center;
 }
@@ -326,7 +326,6 @@ nav .igLink {
 	max-width: 150px;
 	border: 3px solid #000000;
 	border-radius: 10px;
-	/* margin-right: 0.25em; */
 	vertical-align: middle;
 }
 
@@ -334,15 +333,6 @@ nav .igLink {
 	max-width: 150px;
 	padding: 25px;
 	border: 3px solid #000000;
-	border-radius: 10px;
-	/* margin-right: 0.25em; */
-	vertical-align: middle;
-}
-
-.specialImage-d3 {
-	max-width: 150px;
-	border: 3px solid #000000;
-	margin-bottom: 1em;
 	border-radius: 10px;
 	vertical-align: middle;
 }
@@ -355,10 +345,6 @@ nav .igLink {
 	margin-top: 10px;
 }
 
-.d3100k {
-	margin-bottom: 0.5em;
-}
-
 /* --------------- Drinks --------------- */
 
 .drink {
@@ -367,7 +353,7 @@ nav .igLink {
 	justify-content: center;
 	margin: auto;
 	width: 90%;
-	padding-top: 6em;
+	padding-top: 4em;
 }
 
 .drinkTitle {
@@ -384,7 +370,6 @@ nav .igLink {
 	max-width: 150px;
 	border: 3px solid #000000;
 	border-radius: 10px;
-	/* margin-right: 0.25em; */
 	vertical-align: middle;
 }
 
