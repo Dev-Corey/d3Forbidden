@@ -1,4 +1,8 @@
-@import url(https://db.onlinewebfonts.com/c/e48f673dde3194b7957a4f17d6d7fe17?family=Charcuterie+Block+W05+Regular);
+/* @import url(https://db.onlinewebfonts.com/c/e48f673dde3194b7957a4f17d6d7fe17?family=Charcuterie+Block+W05+Regular); */
+@font-face {
+	font-family: 'Charcuterie Block';
+	src: url('assets/font/Charcuterie\ Block\ W05\ Regular.woff2') format('woff2'), url('assets/font/Charcuterie\ Block\ W05\ Regular.woff') format('woff');
+}
 
 * {
 	margin: 0;
@@ -13,7 +17,7 @@ html {
 body {
 	height: 100vh;
 
-	font-family: 'Charcuterie Block W05 Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: 'Charcuterie Block', 'sans-serif';
 
 	font-size: 30px;
 	color: #000000;
@@ -69,7 +73,6 @@ h5 {
 }
 
 p {
-	/* font-family: 'Rubik Doodle Shadow'; */
 	font-size: 25px;
 }
 
@@ -379,12 +382,7 @@ nav .igLink {
 }
 
 .partnerLink {
-	color: black;
-}
-
-.partnerLink-d3 {
-	color: #0063c0;
-	text-decoration: underline #ffffff;
+	color: blue;
 }
 
 /* --------------- Bar Only --------------- */
