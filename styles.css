@@ -17,7 +17,7 @@ html {
 body {
 	height: 100vh;
 
-	font-family: 'Charcuterie Block', 'sans-serif';
+	font-family: 'Charcuterie Block', sans-serif;
 
 	font-size: 30px;
 	color: #000000;
@@ -167,7 +167,7 @@ nav .igLink {
 }
 
 .navBar button a {
-	font-family: 'Charcuterie Block W05 Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: 'Charcuterie Block', sans-serif;
 	color: #000000;
 	text-decoration: none;
 	text-align: center;
