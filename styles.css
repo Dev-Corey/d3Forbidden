@@ -1,4 +1,3 @@
-/* @import url(https://db.onlinewebfonts.com/c/e48f673dde3194b7957a4f17d6d7fe17?family=Charcuterie+Block+W05+Regular); */
 @font-face {
 	font-family: 'Charcuterie Block';
 	src: url('assets/font/Charcuterie\ Block\ W05\ Regular.woff2') format('woff2'), url('assets/font/Charcuterie\ Block\ W05\ Regular.woff') format('woff');
@@ -213,16 +212,17 @@ nav .igLink {
 	right: -3px;
 }
 
-/* .hamburger,
+.hamburger,
 .hamburger::before,
 .hamburger::after {
 	margin-left: 1.098rem;
 	width: 1.5rem;
 	height: 4px;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(10, 10, 10);
+	border-radius: 10px;
 
 	transition: transform 450ms ease-in-out, opacity 200ms linear;
-} */
+}
 
 .hamburger::before,
 .hamburger::after {
