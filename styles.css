@@ -266,13 +266,13 @@ nav .igLink {
 
 /* ----------------- Food ------------------- */
 
-/* .food {
+.food {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	padding-top: 8em;
-	width: 80%;
+	width: 82%;
+	padding-top: 4em;
 	text-align: center;
 }
 
@@ -287,8 +287,8 @@ nav .igLink {
 	max-width: 150px;
 	border: 3px solid #000000;
 	border-radius: 10px;
-	margin-right: 0.25em;
 	vertical-align: middle;
+	padding: 10px;
 }
 
 .foodDetails {
@@ -297,7 +297,7 @@ nav .igLink {
 
 .foodDetails > p {
 	margin-top: 10px;
-} */
+}
 
 /* ------------------- Special Drink ---------------- */
 
