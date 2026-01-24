@@ -1,6 +1,8 @@
 @font-face {
 	font-family: 'Charcuterie Block';
-	src: url('assets/font/Charcuterie\ Block\ W05\ Regular.woff2') format('woff2'), url('assets/font/Charcuterie\ Block\ W05\ Regular.woff') format('woff');
+	src:
+		url('assets/font/Charcuterie\ Block\ W05\ Regular.woff2') format('woff2'),
+		url('assets/font/Charcuterie\ Block\ W05\ Regular.woff') format('woff');
 }
 
 * {
@@ -69,6 +71,10 @@ h4 {
 h5 {
 	font-size: 24px;
 	font-weight: bold;
+}
+
+h6 {
+	font-size: 15px;
 }
 
 p {
@@ -221,7 +227,9 @@ nav .igLink {
 	background-color: rgb(10, 10, 10);
 	border-radius: 10px;
 
-	transition: transform 450ms ease-in-out, opacity 200ms linear;
+	transition:
+		transform 450ms ease-in-out,
+		opacity 200ms linear;
 }
 
 .hamburger::before,
